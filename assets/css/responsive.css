@@ -1,0 +1,46 @@
+@media (max-width: 1023px) {
+    .place-buy {
+        padding: 15px 16px;
+    } 
+    #comtact-form .form-control{
+        padding: 15px;
+    }
+}
+@media (max-width: 730px) {
+    .s-ful-width,
+    .s-col-ful {
+        width: 100%;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display: inline-block;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+    #nav {
+        display: block;
+    }
+    #slider .text-heading { 
+        font-size: 16px;
+    }
+    #slider .text-descrip {
+        font-size: 12px;
+    }
+    #content .image-items {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .contact-form {
+        margin-top: 16px;
+    }
+}

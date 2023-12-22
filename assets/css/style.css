@@ -5,6 +5,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 .clear {
@@ -36,7 +37,7 @@ html {
     padding-left: 8px;
     padding-right: 8px;
 }
-.col-haft {
+.col-half {
     width: 50%;
 }
 .col-ful {
@@ -62,7 +63,7 @@ html {
 }
 #nav li a{
     text-decoration: none;
-    line-height: 46.5px;
+    line-height: 46px;
     padding: 0 24px;
     display: block;
 }
@@ -94,31 +95,92 @@ html {
     top:0;
     left: 0;
     right: 0;
-    height: 46.5px;
+    height: 46px;
     background-color: #00adad;
     z-index: 1;
+    overflow: hidden;
 }
+#header .mobile-menu-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+}
+#header .mobile-menu-btn:hover{
+    background-color:#ccc;    
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
 }
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+#header .menu-icon,
 #header .search-icon{
     color:#fff;
     font-size: 18px;
-    line-height: 46.5px;
+    line-height: 46px;
 }
-
-
-#slider {
-    position: relative;
-    margin-top: 46.5px;
-    padding-top: 50%;
-    background: url('/assets/img/hus.jpg') top center / cover no-repeat;
+.slider-amina{
+    width: 60%;
+    margin:0 auto;
+    overflow: hidden;  
+    padding-top: 40px;  
 }
+.slider-imgs{
+    display: flex;
+}
+.slider-imgs img{
+    width: 100%;
+}
+.slider-imgs input{
+    display: none;
+}
+.labelslider{
+    display: flex;
+    justify-content: center;
+}
+.labelslider label{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #00adad;
+    margin: 2px;
+}
+.labelslider label:hover{
+    background: #00adad;
+}
+#img:checked ~.imgslider{
+    margin-left: -100%;
+}
+#img1:checked ~.imgslider1{
+    margin-left: -200%;
+}
+#img3:checked ~.imgslider3{
+    margin-left: -200%;
+}
+/*@keyframes move_right{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:500px;
+    }
+}
+#slider .animat{
+    transition: margin-left 2s 0.5s ease-in-out;
+  -moz-transition: margin-left 2s 0.5s ease-in-out;
+  -webkit-transition: margin-left 2s 0.5s ease-in-out;
+}
+#slider .animat:hover {
+    margin-left: 150px;
+}*/
 #slider .text-content {
     position: absolute;
     color:#fff;
@@ -130,18 +192,23 @@ html {
 #slider .text-heading { 
     font-weight: 700;
     font-size: 26px;
+    text-shadow: 1px 1px 2px black;
 }
 #slider .text-descrip {
     font-size: 17px;
     margin-top: 6px;
+    text-shadow: 1px 1px 2px black;
 }
 
 
 #content .content-section {
         width: 800px;
+        max-width: 100%;
         padding: 64px 0;
         margin-right: auto;
         margin-left: auto;
+        padding-left: 16px;
+        padding-right: 16px;
 }
 #content .section-head {
     font-size: 30px;
@@ -177,14 +244,42 @@ html {
     width: 230px;
     margin-top: 15px;
     border-radius: 4px;
+    height: 153px;
 }
 
 
 .tour-section {
     background-color: #00adad;
 }
+.tickets-list{
+    background-color: #fff;
+    list-style: none;
+    margin-top: 40px;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color:#fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;   
+    background-color: #00adad;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
 .place-list{ 
-    margin: 32px -8px 48px;
+    margin: 16px -8px 48px;
 }
 .place-item{
     float:left;
@@ -214,6 +309,7 @@ html {
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    text-align: center;
 }
 .place-buy:hover {
     color:#000;
@@ -242,7 +338,7 @@ html {
 .contact-form .form-submit {
     background-color: #00adad;
     color:#fff;
-    border: 1px solid #000;
+    border: 0px solid #000;
     padding: 10px 16px;
     float:right;
 }

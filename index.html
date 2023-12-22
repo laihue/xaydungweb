@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>HUS</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css"><link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css"><link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
@@ -14,12 +16,12 @@
         <div id="header">
             
             <ul id="nav">
-                <li><a href="">Trang chủ</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Đơn vị</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#gioithieu">Giới thiệu</a></li>
+                <li><a href="#donvi">Đơn vị</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         Thêm
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -35,36 +37,49 @@
                 <i class="search-icon ti-search"></i>
             </div>
 
-        </div>
-
-        <div id="slider">
-
-            <div class="text-content">
-                <h2 class="text-heading">Trường Đại học Khoa học Tự nhiên</h2>
-                <div class="text-descrip">VNU University of Science – VNU-HUS</div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
 
         </div>
 
+        <div class="slider-amina">
+
+            <div class="slider-imgs">
+                <input type="radio" name="inputslider" id="img">
+                <input type="radio" name="inputslider" id="img1">    
+                <input type="radio" name="inputslider" id="img3">    
+            
+                <img src="assets/img/hus.jpg" alt="img" class="imgslider">
+                <img src="assets/img/hus1.jpg" alt="img1" class="imgslide1">
+                <img src="assets/img/hus3.jpg" alt="img3" class="imgslider3">
+            </div>   
+            <div class="labelslider">
+                <label for="img"></label>
+                <label for="img1"></label>
+                <label for="img3"></label>
+            </div> 
+        </div>
+
         <div id="content">
 
-            <div class="content-section">
+            <div id="gioithieu"class="content-section">
 
                 <h2 class="section-head">GIỚI THIỆU</h2>
                 <p class="section-sub-head">”Sáng tạo, Tiên phong, Trách nhiệm xã hội”</p> 
                 <p class="about-text">Trường Đại học Khoa học Tự nhiên là một trong những trường đại học thành viên của Đại học Quốc gia Hà Nội; là đơn vị trọng điểm, đầu ngành của Việt Nam về đào tạo, nghiên cứu khoa học cơ bản và khoa học công nghệ, mang tính ứng dụng cao. Năm 2017, Trường Đại học Khoa học Tự nhiên là trường đại học đầu tiên của Việt Nam được kiểm định và đạt chuẩn chất lượng giáo dục theo bộ tiêu chuẩn của Mạng lưới các trường đại học Đông Nam Á (AUN-QA).</p>
                 
                 <div class="members-list"> 
-                    <div class="member-item">
-                        <p class="member-name">Khuôn viên 1<br>334 Nguyễn Trãi - Thanh Xuân - HN</p>
+                    <div class="member-item image-items">
+                        <p class="member-name">Khuôn viên 1<br>334 Nguyễn Trãi - Thanh Xuân</p>
                         <img src="./assets/img/khuon_vien1.jpg" alt="Name" class="member-img"> 
                     </div>
-                    <div class="member-item">
-                        <p class="member-name">Khuôn viên 2<br>19 Lê Thánh Tông - Hoàn Kiếm - HN</p>
+                    <div class="member-item image-items">
+                        <p class="member-name">Khuôn viên 2<br>19 Lê Thánh Tông - Hoàn Kiếm</p>
                         <img src="./assets/img/khuonvien2.jpg"alt="Name" class="member-img"> 
                     </div>
-                    <div class="member-item">
-                        <p class="member-name">Khuôn viên 3<br>182 Lương Thế Vinh-Thanh Xuân-HN</p>
+                    <div class="member-item image-items">
+                        <p class="member-name">Khuôn viên 3<br>182 Lương Thế Vinh - Thanh Xuân</p>
                         <img src="./assets/img/khuonvien3.jpg"alt="Name" class="member-img"> 
                     </div>
                     <div class="clear"></div>
@@ -72,70 +87,74 @@
 
             </div>
 
-            <div class="tour-section">
-
+            <div id="donvi"class="tour-section">
                 <div class="content-section">
                     <h2 class="section-head text-white">ĐƠN VỊ ĐÀO TẠO</h2>
                     <p class="section-sub-head text-white">Gồm 8 khoa</p>                
                     
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October<span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
                     <div class="place-list">
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/toan_co_tin.jpg" alt="Toán-cơ-tin" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Toán-cơ-tin</h3>
-                                <a href="https://mim.hus.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://mim.hus.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/vat_ly.jpg" alt="Vật lý" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Vật lý</h3>                                
-                                <a href="https://physics.hus.vnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://physics.hus.vnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/sinh_hoc .jpg" alt="Sinh học" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Sinh học</h3>                                
-                                <a href="https://bio.hus.vnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://bio.hus.vnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
                         <div class="clear-left"></div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/khoa-hoa-hoc.jpg" alt="Hóa học" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Hóa học</h3>                    
-                                <a href="https://www.chemvnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://www.chemvnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                             
                         </div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/khoa-dia-ly.jpg" alt="Địa lý" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Địa lý</h3>                                
-                                <a href="https://geogvnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://geogvnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/khoa-dia-chat.jpg" alt="Địa chất" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Địa chất</h3>                               
-                                <a href="https://geology.hus.vnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://geology.hus.vnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
                        
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/khoa-moi-truong.jpg" alt="Môi trường" class="place-image">   
                             <div class="place-body">
                                 <h3 class="place-head">Môi trường</h3>                                
-                                <a href="https://fes.hus.vnu.edu.vn/" class="place-buy">Tìm hiểu</a>
+                                <a href="https://fes.hus.vnu.edu.vn/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item mt-16 s-col-ful">
                             <img src="./assets/img/khoa-khi-tuong-thuy-van-va-hai-duong-hoc.jpg" alt="Khí tượng" class="place-image">   
                             <div class="place-body">
-                                <h3 class="place-head">Khí tượng thủy văn và hải dương học</h3>                                
-                                <a href="https://hmovnu.com/" class="place-buy">Tìm hiểu</a>
+                                <h3 class="place-head">Khí tg thủy văn&hải dg học</h3>                                
+                                <a href="https://hmovnu.com/" class="place-buy s-ful-width">Tìm hiểu</a>
                             </div>
                         </div>
                     </div>
@@ -144,26 +163,26 @@
 
             </div>
             
-            <div class="content-section">
+            <div id="lienhe"class="content-section">
 
                 <h2 class="section-head">LIÊN HỆ</h2>
 
                 <div class="row contact-content">
 
-                    <div class="col col-half contact-infor">
-                        <p> <i class="ti-direction"></i>334 Nguyễn Trãi, Thanh Xuân Trung, Thanh <br>Xuân, Hà Nội </p>
+                    <div class="col col-half s-col-ful">
+                        <p> <i class="ti-direction"></i>334 Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội </p>
                         <p> <i class="ti-email"></i>tuvantuyensinh@hus.edu.vn</p>
                         <p> <i class="ti-link"></i>http://www.hus.vnu.edu.vn/</p>
                     </div>
 
-                    <div class="col col-half contact-form"> 
+                    <div class="col col-half contact-form s-col-ful"> 
                         <form action="">
                             <div class="row">
-                                <div class="col col-haft">
-                                    <input type="text" name="" placeholder="Tên" required id="" class="form-control";>
+                                <div class="col col-half s-col-ful ">
+                                    <input type="text" name="" placeholder="Lại Thị Huế" required id="" class="form-control";>
                                 </div>
-                                <div class="col col-haft">
-                                    <input type="email" name="" placeholder="Email" required  id=""  class="form-control";>
+                                <div class="col col-half s-col-ful s-mt-8 ">
+                                    <input type="email" name="" placeholder="huelait@gmail.com" required  id=""  class="form-control";>
                                 </div>
                                 <div class="clear"></div>
                             </div>
@@ -172,7 +191,7 @@
                                     <input type="text" name="" placeholder="Lời nhắn" required id=""  class="form-control";>
                                 </div>
                             </div>
-                            <input class="form-submit mt-16" type="submit" value="Gửi">
+                            <input class="form-submit mt-16 s-ful-width" type="submit" value="Gửi">
                         </form>
                     </div>
 
@@ -203,6 +222,26 @@
     </div>
     </div>
 
-    
+    <script>
+        var header = document.getElementById('header');  
+        var mobileMenu = document.getElementById('mobile-menu');   
+        var headerHeight = header.clientHeight;
+
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight===headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+           } else {
+            header.style.height = null;
+            }
+        }
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i=0; i<menuItems.length; i++){
+            var menuItem=menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }    
+        }
+    </script>    
 </body>
 </html>
