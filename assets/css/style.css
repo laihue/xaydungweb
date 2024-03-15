@@ -15,7 +15,7 @@ html {
     clear:left;
 } 
 .text-white {
-    color: #fff; !important;
+    color: #fff !important;
 }
 .row {
     margin-left: -8px;
@@ -128,7 +128,7 @@ html {
     line-height: 46px;
 }
 .slider-amina{
-    width: 60%;
+    width: 75%;
     margin:0 auto;
     overflow: hidden;  
     padding-top: 40px;  
@@ -327,6 +327,13 @@ html {
     width: 30px;
     display: inline-block;
 }
+.abc{
+    color:#000;
+    text-decoration: none;
+}
+.abc:hover{
+    text-decoration:underline;
+}
 .contact-form {
     font-size: 15px;
 }
@@ -347,7 +354,7 @@ html {
     cursor: pointer;
 }
 
-.map-section img {
+.map-section {
     width: 100%;   
 }
 
